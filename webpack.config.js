@@ -52,5 +52,5 @@ if(TARGET === 'dev') {
     }
   });
 } else {
-  module.exports = common;
+  module.exports = common_settings;
 }

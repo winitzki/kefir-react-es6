@@ -8,7 +8,7 @@ export default class Message extends React.Component {
 
   render() {
     return <div>
-      <input type="checkbox" value="box1" checked={this.props.checked} onChange={this.props.checkboxClick}></input>
+      <input type="checkbox" value="box1" checked={this.props.checked} onChange={this.props.checkboxInputCallback}></input>
       {(this.props.checked) ? <div>{this.props.children}</div> : <div/>}
     </div>
   }

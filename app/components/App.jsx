@@ -6,6 +6,8 @@ import K from 'kefir'
 const initModelState = { checked: true }
 
 const checkboxInput = K.pool()
+const checkboxInputCallback = KG.emitTo(checkboxInput)
+
 const allInput = K.merge([checkboxInput])
 
 function updater(prevState, event) {
@@ -24,7 +26,7 @@ export default class App extends React.Component {
 
   render() {
     const messageProps = {
-      checkboxClick: KG.emitTo(checkboxInput),
+      checkboxInputCallback,
       checked: this.state.checked
     }
 

@@ -6,7 +6,8 @@
   "scripts": {
     "lint": "eslint . --ext .js --ext .jsx",
     "start": "TARGET=dev webpack-dev-server --progress --colors --hot --inline --history-api-fallback",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack -p"
   },
   "repository": {
     "type": "git",
